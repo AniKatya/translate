@@ -5,11 +5,11 @@ class Field extends React.Component {
   static contextType = LanguageContext;
   render() {
     let text;
-    if (this.context === "english") {
+    if (this.context.language === "english") {
       text = "Name";
-    } else if (this.context === "hebrew") {
+    } else if (this.context.language === "hebrew") {
       text = "שם";
-    } else if (this.context === "russian") {
+    } else if (this.context.language === "russian") {
       text = "Имя";
     }
     return (
